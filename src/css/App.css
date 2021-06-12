@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    background-image: url('weather.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.search{
+    padding: 15px;
+    border: none;
+    font-size: medium;
+    margin-top: 15%;
+    margin-bottom: 30px;
+    outline: none;
+    width: 50%;
+}
+
+.search:focus{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.display{
+    background: white;
+    padding: 25px 15px;
+    width: 50%;
+    margin: auto;
+}
+
+.country{
+    background: yellowgreen;
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+
+.opacity{
+    opacity: .93;
+    border-radius: 10px;
+}
