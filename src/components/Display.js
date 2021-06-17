@@ -1,16 +1,17 @@
 import React from "react";
 
-export default function Dislay() {
+export default function Dislay({wth}) {
     
     return (
         <div className='display opacity'>
-            <h3>City<sup className='country'><small>CA</small></sup></h3>
+            <h3>{wth.name}<sup className='country'><small>{wth.sys.country}</small></sup></h3>
             <br />
-            <h1>18<sup><small>o</small></sup></h1>
+            <h1>{Math.round(wth.main.temp)}<sup><small>&deg;C</small></sup></h1>
             <br />
-            <h2>&#9925;</h2>
-            <br />
-            <span>MIST</span>
+            <div className='info'>
+                <img className='city-icon' src={`https://openweathermap.org/img/wn/${wth.weather[0].icon}@2x.png`} alt={wth.weather[0].description} />
+                <p>{wth.weather[0].description}</p>
+            </div>
         </div>
     )
 

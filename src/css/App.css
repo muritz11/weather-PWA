@@ -48,3 +48,9 @@
     opacity: .93;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 480px) {
+    .search, .display {
+        width: 100%;
+    }
+}
