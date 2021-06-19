@@ -25,7 +25,8 @@
         {
           "src": "/images/192.png",
           "type": "image/png",
-          "sizes": "192x192"
+          "sizes": "192x192",
+          "purpose": "any maskable"
         },
         {
           "src": "/images/512.png",
