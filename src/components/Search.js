@@ -26,8 +26,10 @@ export default function Search() {
                     }
                 })
                 .catch(err => {
-                    console.log(err.message);
-                    setErr(err.message);
+                    if (err.message.indexOf('404') !== -1) {
+                        console.log(err.message);
+                        setErr('Sorry, city was not found');
+                    }
                     setPending(null);
                     setTimeout(() => {
                         setErr(null);
