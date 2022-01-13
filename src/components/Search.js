@@ -42,7 +42,7 @@ export default function Search() {
     return (
         <div>
             <input 
-                placeholder='search...' value={ city } className='search opacity' onChange={handleInput} onKeyPress={search}
+                placeholder='Search city and hit enter...' value={ city } className='search opacity' onChange={handleInput} onKeyPress={search}
             />
             {pending && <h2 className='loading opacity'>Loading...</h2>}
             {err && <h3 className='loading opacity'>Failed: {err}</h3>}
